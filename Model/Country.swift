@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Country: Codable, Equatable {
+struct Country: Codable, Equatable, Identifiable {
      let capital: String?
      let code: String?
     let currency: Currency?
@@ -16,6 +16,10 @@ struct Country: Codable, Equatable {
     let language: Language?
     let name: String?
     let region: String?
+    
+    var id: String {
+        code ?? name ?? UUID().uuidString
+    }
     
 }
 
