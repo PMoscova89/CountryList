@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -25,6 +25,7 @@
 		7B1870292E13129600D637A8 /* LandingViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1870282E13129600D637A8 /* LandingViewController+UITableView.swift */; };
 		7B1870312E13174600D637A8 /* CountriesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1870302E13174600D637A8 /* CountriesTests.swift */; };
 		7B1870382E1318C600D637A8 /* CountryDecodingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B1870372E1318C600D637A8 /* CountryDecodingTests.swift */; };
+		7B21778C2E308E5E0094B65D /* MainLandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B21778B2E308E5E0094B65D /* MainLandingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,7 +60,13 @@
 		7B18702E2E13174600D637A8 /* CountriesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountriesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B1870302E13174600D637A8 /* CountriesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountriesTests.swift; sourceTree = "<group>"; };
 		7B1870372E1318C600D637A8 /* CountryDecodingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDecodingTests.swift; sourceTree = "<group>"; };
+		7B21778B2E308E5E0094B65D /* MainLandingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainLandingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		7B21778D2E30911E0094B65D /* SwiftUI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftUI; sourceTree = "<group>"; };
+		7B2177902E309FE00094B65D /* SwiftUI */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = SwiftUI; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7B186FF32E12EF7400D637A8 /* Frameworks */ = {
@@ -135,6 +142,7 @@
 		7B18700F2E12F79700D637A8 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				7B2177902E309FE00094B65D /* SwiftUI */,
 				7B1870212E130BC900D637A8 /* CountryListViewModel.swift */,
 			);
 			path = ViewModel;
@@ -143,6 +151,7 @@
 		7B1870102E12F7A000D637A8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7B21778D2E30911E0094B65D /* SwiftUI */,
 				7B18701A2E1301BC00D637A8 /* CountryTableViewCell.swift */,
 				7B18701F2E13030800D637A8 /* CountryTableViewCell.xib */,
 			);
@@ -153,6 +162,7 @@
 			isa = PBXGroup;
 			children = (
 				7B186FFD2E12EF7400D637A8 /* LandingViewController.swift */,
+				7B21778B2E308E5E0094B65D /* MainLandingViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -216,6 +226,10 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				7B21778D2E30911E0094B65D /* SwiftUI */,
+				7B2177902E309FE00094B65D /* SwiftUI */,
 			);
 			name = Countries;
 			productName = Countries;
@@ -305,6 +319,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B1870272E13118500D637A8 /* LandingViewController+CountryListViewModel.swift in Sources */,
+				7B21778C2E308E5E0094B65D /* MainLandingViewController.swift in Sources */,
 				7B1870192E13016100D637A8 /* CountryService.swift in Sources */,
 				7B1870152E12FF1600D637A8 /* Country.swift in Sources */,
 				7B186FFE2E12EF7400D637A8 /* LandingViewController.swift in Sources */,
